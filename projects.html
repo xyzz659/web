@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Marianne Louise Medrano">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">❤️</button>
+
+    <!-- Navigation -->
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html" class="active" aria-current="page">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Projects Header -->
+        <header id="main-content">
+            <h1>My Projects</h1>
+            <p>Check out some of my recent work and accomplishments</p>
+        </header>
+
+        <!-- Image Slider for Featured Projects -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="portfolio.jpg" alt="Portfolio Website Project">
+                        <div class="slide-content">
+                            <h3>Personal Portfolio Website</h3>
+                            <p>A responsive portfolio showcasing my skills and projects</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="DORY.jpg" alt="To-Do List App">
+                        <div class="slide-content">
+                            <h3>GRAHPIC DESIGN</h3>
+                            <p>A Graphic Design For ads And Comercial</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="weather.jpg" alt="Weather App">
+                        <div class="slide-content">
+                            <h3>Coded RESUME</h3>
+                            <p>Portfolio That Is Made By codes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+                <button class="slider-btn next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+
+                <!-- Slider Dots -->
+                <div class="slider-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Projects -->
+        <section id="projects">
+            <h2>All Projects</h2>
+
+            <div class="project">
+                <h3>Project 1: PERSONAL PORTFOLIO</h3>
+                <img src="portfolio.jpg" alt="Portfolio Website Screenshot" />
+                <p>A fully responsive personal portfolio website built with HTML, CSS, and JavaScript. Features include
+                smooth scrolling, and form validation.</p>
+                
+                <a href="https://1-portfolio-iota.vercel.app/"><button>View Project</button></a>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: GRAHPIC DESIGN </h3>
+                <img src="DORY.jpg" alt="Task Manager App Screenshot" />
+                <p>As a passionate graphic designer, I specialize in crafting visually compelling solutions that blend creativity with strategic thinking. From branding and logo design to digital illustrations and user interfaces, I leverage tools like Adobe Creative Suite to transform ideas into impactful visuals. My work emphasizes clean aesthetics, effective communication, and user-centered design, helping clients stand out in a crowded market. Explore my portfolio to see how I bring concepts to life.</p>
+                <a href="https://www.canva.com/design/DAG-WruT-XI/Ur0ycU6ML4yIL6F9kBWc3Q/edit?utm_content=DAG-WruT-XI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><button>View Project</button></a>
+                
+            </div>
+
+            <div class="project">
+                <h3>Project 3: RESUME</h3>
+                <img src="weather.jpg" alt="Weather Dashboard Screenshot" />
+                <p>As a skilled developer, I've built this interactive RESUME from the ground up using HTML, CSS, JavaScript, and frameworks like React. It showcases my coding projects, from responsive websites to full-stack applications, with clean, efficient code and seamless user experiences. Dive in to explore my technical skills, problem-solving approach, and passion for turning ideas into functional digital solutions.</p>
+                <a href="https://act-portfolio-six.vercel.app/"><button>View Project</button></a>
+                
+            </div>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 John Zabdiel Viloria. All rights reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
